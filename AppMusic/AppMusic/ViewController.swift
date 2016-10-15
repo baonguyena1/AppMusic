@@ -21,6 +21,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Handle play music in background mode
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .defaultToSpeaker)
+        } catch {
+            
+        }
+        
         playMusicAt(0)
         playMusicOnline()
     }
