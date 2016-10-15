@@ -69,6 +69,28 @@ class ViewController: UIViewController {
         }
     }
     
+    // handle remote control of iphone (play/pause/next)
+    override func remoteControlReceived(with event: UIEvent?) {
+        guard let event = event else {
+            return
+        }
+        
+        if event.type == .remoteControl {
+            switch event.subtype {
+            case .remoteControlPlay:
+                avAudioPlayer.play()
+            case .remoteControlPause:
+                avAudioPlayer.pause()
+            case .remoteControlNextTrack:
+                print("bai tiep theo")
+            case .remoteControlPreviousTrack:
+                print("bai truoc do")
+            default:
+                print("chua dang ky")
+            }
+        }
+    }
+    
     @IBAction func changeDurationTime(_ sender: AnyObject) {
         avAudioPlayer.pause()
         avAudioPlayer.currentTime = TimeInterval(durationSlider.value)
