@@ -13,6 +13,7 @@
 		BF1FCA961DB1F83F0035E2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1FCA951DB1F83F0035E2F1 /* Assets.xcassets */; };
 		BF1FCA991DB1F83F0035E2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1FCA971DB1F83F0035E2F1 /* LaunchScreen.storyboard */; };
 		BF1FCAA41DB1FA300035E2F1 /* Anywhere I Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF1FCAA31DB1FA300035E2F1 /* Anywhere I Go.mp3 */; };
+		BF22B28B1DB27EA400343693 /* Atinge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BF22B28A1DB27EA400343693 /* Atinge.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BF1FCA981DB1F83F0035E2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF1FCA9A1DB1F83F0035E2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1FCAA31DB1FA300035E2F1 /* Anywhere I Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Anywhere I Go.mp3"; path = "../../../../../../../../Downloads/Anywhere I Go.mp3"; sourceTree = "<group>"; };
+		BF22B28A1DB27EA400343693 /* Atinge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Atinge.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1FCAA31DB1FA300035E2F1 /* Anywhere I Go.mp3 */,
+				BF22B28A1DB27EA400343693 /* Atinge.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				BF1FCA991DB1F83F0035E2F1 /* LaunchScreen.storyboard in Resources */,
 				BF1FCAA41DB1FA300035E2F1 /* Anywhere I Go.mp3 in Resources */,
+				BF22B28B1DB27EA400343693 /* Atinge.mp3 in Resources */,
 				BF1FCA961DB1F83F0035E2F1 /* Assets.xcassets in Resources */,
 				BF1FCA941DB1F83F0035E2F1 /* Main.storyboard in Resources */,
 			);
@@ -324,6 +328,7 @@
 				BF1FCA9F1DB1F83F0035E2F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
