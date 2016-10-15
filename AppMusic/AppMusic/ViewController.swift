@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 
 class ViewController: UIViewController {
     
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
         } catch {
             
         }
-        
+    
         playMusicAt(0)
         playMusicOnline()
     }
@@ -44,6 +45,17 @@ class ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(changeDurationFollowPlayer), userInfo: nil, repeats: true)
             avAudioPlayer.delegate = self
             avAudioPlayer.play()
+            
+            // Handle show infor in lock screen
+            let artWork = MPMediaItemArtwork(image: #imageLiteral(resourceName: "anywhere_i_go"))
+            MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+                MPMediaItemPropertyTitle: "Anywhere I Go",
+                MPMediaItemPropertyArtist: "Vicetone",
+                MPMediaItemPropertyPlaybackDuration: avAudioPlayer.duration,
+                MPMediaItemPropertyArtwork: artWork
+            ]
+            UIApplication.shared.beginReceivingRemoteControlEvents()
+            becomeFirstResponder()
         } catch let error {
             print(error)
         }
